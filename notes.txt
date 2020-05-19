@@ -1,0 +1,12 @@
+Tuto rails_admin
+https://onebitcode.com/english-rails-admin/
+
+wiki rails_admin
+https://github.com/sferik/rails_admin/wiki
+https://github.com/sferik/rails_admin/wiki/Dashboard-action
+
+Wiki cancancan
+https://github.com/sferik/rails_admin/wiki/Cancancan
+
+Tuto Docker
+https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
