@@ -10,3 +10,6 @@ https://github.com/sferik/rails_admin/wiki/Cancancan
 
 Tuto Docker
 https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
+
+Custom actions
+https://blog.snajdr.de/custom-actions-for-rails-admin-cf88c2a704b4
