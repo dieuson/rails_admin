@@ -4,6 +4,9 @@ class CustomAttribute < ApplicationRecord
   TEXT_ATTRIBUTE_TYPE = 'TEXT'
   BOOLEAN_ATTRIBUTE_TYPE = 'BOOLEAN'
 
+  validates :attribute_type, inclusion: [TEXT_ATTRIBUTE_TYPE, BOOLEAN_ATTRIBUTE_TYPE]
+  validates :form_name, inclusion: [EventRegistrationForm, Event, UserSignUpForm, UserProfile, User]
+
   def boolean?(value)
     value.is_a?(TrueClass) || value.is_a?(FalseClass)
   end

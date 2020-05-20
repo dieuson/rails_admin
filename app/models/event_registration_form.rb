@@ -15,9 +15,10 @@ class EventRegistrationForm < ApplicationRecord
     field :event
 
     EventRegistrationForm.refresh_methods.each do |question|
-      field question.to_sym do
-        formatted_value { bindings[:object].send(question) }
+      field question[:name].to_sym, question[:type].to_sym do
+        formatted_value { bindings[:object].send(question[:name]) }
       end
     end
+
   end
 end

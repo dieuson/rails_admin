@@ -11,8 +11,8 @@ Event.new().save
 EventRegistrationForm.new(event_id: Event.last.id, user_id: User.where(admin: false).last.id).save
 Event.new().save
 
-CustomAttribute.new(name: 'Nom', attribute_type: 'Text', form_name: 'UserProfile', required: true).save
-CustomAttribute.new(name: 'Prenom', attribute_type: 'Text', form_name: 'UserProfile', required: true).save
+CustomAttribute.new(name: 'Nom', attribute_type: 'TEXT', form_name: 'UserProfile', required: true).save
+CustomAttribute.new(name: 'Prenom', attribute_type: 'TEXT', form_name: 'UserProfile', required: true).save
 
-CustomAttribute.new(name: 'Nom', attribute_type: 'Text', form_name: 'EventRegistrationForm', required: false).save
-CustomAttribute.new(name: 'Prenom', attribute_type: 'Text', form_name: 'EventRegistrationForm', required: false).save
+CustomAttribute.new(name: 'Nom', attribute_type: 'TEXT', form_name: 'EventRegistrationForm', required: false).save
+CustomAttribute.new(name: 'Prenom', attribute_type: 'TEXT', form_name: 'EventRegistrationForm', required: false).save

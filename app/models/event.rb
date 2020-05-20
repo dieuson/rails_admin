@@ -5,9 +5,10 @@ class Event < ApplicationRecord
   rails_admin do
 
     Event.refresh_methods.each do |question|
-      field question.to_sym do
-        formatted_value { bindings[:object].send(question) }
+      field question[:name].to_sym, question[:type].to_sym do
+        formatted_value { bindings[:object].send(question[:name]) }
       end
     end
+
   end
 end
